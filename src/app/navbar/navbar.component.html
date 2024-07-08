@@ -1,11 +1,35 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
 <nav>
-    <h1>Álvarez-Hornia</h1>
+    <a class="site-title" href="/">Álvarez-Hornia</a>
     <ul>
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/photo/miscelanea">Photo</a></li>
-        <li><a routerLink="/exhibitions">Exhibitions</a></li>
-        <li><a routerLink="/films/narrative">Films</a></li>
-        <li><a routerLink="/publications/publishedBooks">Publications</a></li>
-        <li><a routerLink="/about">About</a></li>
+        <li class="dropdown">
+            <a class="dropbtn" href="/photo/miscelanea">Photo<i class="fas fa-angle-down"></i></a>
+            <div class="dropdown-content">
+                <a href="/photo/miscelanea">Miscelanea</a>
+                <a href="/photo/la-petite-mort">La Petite Mort</a>
+                <a href="/photo/landscapes">Landscapes</a>
+            </div>
+        </li>
+        <li><a href="/exhibitions">Exhibitions</a></li>
+        <li class="dropdown">
+            <a class="dropbtn" href="/films/narrative">Films<i class="fas fa-angle-down"></i></a>
+            <div class="dropdown-content">
+                <a href="/films/narrative">Narrative</a>
+                <a href="/films/commercial">Commercial</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn" href="/publications/publishedBooks">Publications<i class="fas fa-angle-down"></i></a>
+            <div class="dropdown-content">
+                <a href="/publications/publishedBooks">Published Books</a>
+                <a href="/publications/publishedTexts">Published Texts</a>
+            </div>
+        </li>
+        <li><a href="/about">About</a></li>
     </ul>
 </nav>
