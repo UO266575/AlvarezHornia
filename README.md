@@ -1,6 +1,6 @@
 # Álvarez-Hornia's Portfolio
 
-![Álvarez-Hornias's Portfolio](https://alvarezhornia.com/assets/img/logo.png)
+![Álvarez-Hornias's Portfolio](https://alvarezhornia.com/wp-content/uploads/2022/12/alvarezhornia.com-Pablo-Alvarez-Hornia-768x515.jpg)
 
 ## Description
 
