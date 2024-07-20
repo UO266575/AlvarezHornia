@@ -1,0 +1,88 @@
+$carousel-max-width: 800px;
+$control-padding: 16px;
+$control-bg-color: rgba(255, 255, 255, 0.5);
+$control-border-radius: 50%;
+$indicator-size: 10px;
+$indicator-color: #bbb;
+$indicator-active-color: #717171;
+$transition-time: 0.5s;
+$control-font-size: 18px;
+
+@mixin transition($property, $time, $ease) {
+    transition: $property $time $ease;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: $carousel-max-width;
+    margin: auto;
+    overflow: hidden;
+
+    &-inner {
+        display: flex;
+        @include transition(transform, $transition-time, ease-in-out);
+    }
+
+    &-item {
+        min-width: 100%;
+        @include transition(opacity, $transition-time, ease-in-out);
+        opacity: 0;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    &-control-prev,
+    &-control-next {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: $control-padding;
+        margin-top: -22px;
+        color: black;
+        font-weight: bold;
+        font-size: $control-font-size;
+        cursor: pointer;
+        user-select: none;
+        background-color: $control-bg-color;
+        border-radius: $control-border-radius;
+
+        &.prev {
+            left: 10px;
+        }
+
+        &.next {
+            right: 10px;
+        }
+    }
+
+    &-indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+
+        span {
+            height: $indicator-size;
+            width: $indicator-size;
+            margin: 0 5px;
+            background-color: $indicator-color;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            @include transition(background-color, 0.6s, ease);
+
+            &.active {
+                background-color: $indicator-active-color;
+            }
+        }
+    }
+}
