@@ -26,4 +26,15 @@ p {
     i:hover {
         color: #666666;
     }
+
+    .social-icon {
+        width: 1.875em;
+        height: 1.875em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .social-icon:hover {
+        fill: #666666;
+    }
 }
