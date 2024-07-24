@@ -1,0 +1,29 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4em;
+}
+
+p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 1em;
+}
+
+.social_media {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2.4em;
+
+    i {
+        font-size: 1.875em;
+        color: black;
+    }
+
+    i:hover {
+        color: #666666;
+    }
+}
