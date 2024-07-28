@@ -1,0 +1,50 @@
+.filmography {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2em;
+    margin: 2em 22em;
+
+    .film {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4em;
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            font-family: "PT Sans", sans-serif;
+            font-size: 1em;
+            color: #7A7A7A;
+            margin: 0.5rem 0 0.2rem;
+            text-align: center;
+        }
+
+        p {
+            font-family: "PT Sans", sans-serif;
+            font-size: 1em;
+            color: #666;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
+
+.full-filmography {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1em;
+
+    a {
+        color: #666;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
