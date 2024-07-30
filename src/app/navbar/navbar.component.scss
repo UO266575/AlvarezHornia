@@ -56,10 +56,12 @@ nav ul li a:hover,
 
 .dropdown-content a {
     color: black;
+    background-color: white;
     font-size: 0.875em !important;
     padding: 0.75em 2em;
     text-decoration: none;
     display: block;
+    z-index: 999;
 }
 
 .dropdown:hover .dropdown-content {
